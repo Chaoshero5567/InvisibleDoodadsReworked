@@ -1,0 +1,153 @@
+<FgmHeader shader_name="Logic_BM_surfaceClip_LM_PBR_SS_metalnessOpacityPBR" game="Games.PLANET_COASTER">
+	<textures>
+		<textureinfo name="pAOSamplerTexture" dtype="FgmDtype.RGBA">
+			<value>
+				<color r="255" g="0" b="255" a="1" />
+				<color r="255" g="0" b="255" a="0" />
+			</value>
+		</textureinfo>
+		<textureinfo name="pBaseColourTexture" dtype="FgmDtype.RGBA">
+			<value>
+				<color r="255" g="0" b="255" a="0" />
+				<color r="255" g="0" b="255" a="0" />
+			</value>
+		</textureinfo>
+		<textureinfo name="pFlexiColourMasksSamplerTexture" dtype="FgmDtype.RGBA">
+			<value>
+				<color r="255" g="0" b="255" a="0" />
+				<color r="255" g="255" b="255" a="0" />
+			</value>
+		</textureinfo>
+		<textureinfo name="pMetalSmoothnessCavityOpacitySamplerTexture" dtype="FgmDtype.RGBA">
+			<value>
+				<color r="255" g="255" b="255" a="0" />
+				<color r="255" g="255" b="255" a="0" />
+			</value>
+		</textureinfo>
+		<textureinfo name="pNormalTexture" dtype="FgmDtype.RGBA">
+			<value>
+				<color r="255" g="255" b="255" a="0" />
+				<color r="255" g="255" b="255" a="0" />
+			</value>
+		</textureinfo>
+	</textures>
+	<attributes>
+		<attribinfo name="pAOTexCoordIndex" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pAlphaBlendOp" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pAlphaDestBlend" dtype="FgmDtype.INT">
+			<value>5</value>
+		</attribinfo>
+		<attribinfo name="pAlphaFunc" dtype="FgmDtype.INT">
+			<value>7</value>
+		</attribinfo>
+		<attribinfo name="pAlphaSrcBlend" dtype="FgmDtype.INT">
+			<value>4</value>
+		</attribinfo>
+		<attribinfo name="pAlphaTestEnable" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pAlphaTestRef" dtype="FgmDtype.FLOAT">
+			<value>0.5</value>
+		</attribinfo>
+		<attribinfo name="pBlendEnable" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pBlendOp" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pCullMode" dtype="FgmDtype.INT">
+			<value>2</value>
+		</attribinfo>
+		<attribinfo name="pDepthEnable" dtype="FgmDtype.BOOL">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pDepthFunc" dtype="FgmDtype.INT">
+			<value>2</value>
+		</attribinfo>
+		<attribinfo name="pDepthWriteMask" dtype="FgmDtype.INT">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pDestBlend" dtype="FgmDtype.INT">
+			<value>5</value>
+		</attribinfo>
+		<attribinfo name="pDielectricReflectivity" dtype="FgmDtype.INT">
+			<value>59</value>
+		</attribinfo>
+		<attribinfo name="pDirectionalAOEnabled" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pEnableScreenSpaceAO" dtype="FgmDtype.BOOL">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pExtrusionPaint" dtype="FgmDtype.BOOL">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pFillMode" dtype="FgmDtype.INT">
+			<value>2</value>
+		</attribinfo>
+		<attribinfo name="pFlexiColourBlended" dtype="FgmDtype.BOOL">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pFlexiColourDistanceFieldParams" dtype="FgmDtype.FLOAT_4">
+			<value>0.42 0.45 0.48 0.02</value>
+		</attribinfo>
+		<attribinfo name="pFlexiColourTexCoordIndex" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pFlexiColourUseAdditiveBlend" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pFlexiColourVertexColour" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pRenderLayer" dtype="FgmDtype.INT">
+			<value>1</value>
+		</attribinfo>
+		<attribinfo name="pSrcBlend" dtype="FgmDtype.INT">
+			<value>4</value>
+		</attribinfo>
+		<attribinfo name="pStencilBackDepthFail" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilBackFail" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilBackFunc" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilBackPass" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilEnable" dtype="FgmDtype.BOOL">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilFrontDepthFail" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilFrontFail" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilFrontFunc" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilFrontPass" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilReadMask" dtype="FgmDtype.INT">
+			<value>255</value>
+		</attribinfo>
+		<attribinfo name="pStencilRef" dtype="FgmDtype.INT">
+			<value>0</value>
+		</attribinfo>
+		<attribinfo name="pStencilWriteMask" dtype="FgmDtype.INT">
+			<value>255</value>
+		</attribinfo>
+		<attribinfo name="pWriteMask" dtype="FgmDtype.INT">
+			<value>7</value>
+		</attribinfo>
+	</attributes>
+</FgmHeader>
